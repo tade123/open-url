@@ -22,10 +22,10 @@ def open_url_at(target_time, url):
 
 if __name__ == "__main__":
     # 基準時刻を指定 (ターゲット時刻)
-    target_time = datetime(2024, 12, 15, 10, 49, 0, 200)  # 年, 月, 日, 時, 分, 秒, ミリ秒
+    target_time = datetime(2024, 1, 1, 0, 0, 0, 0)  # 年, 月, 日, 時, 分, 秒, ミリ秒
 
     # 開くURL
-    url = "https://www.example.com"
+    url = "http://abehiroshi.la.coocan.jp/"
 
     # 別スレッドでタスクを実行
     threading.Thread(target=open_url_at, args=(target_time, url)).start()
